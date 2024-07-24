@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 300px;
+    padding: 10px;
+    margin: 0px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    border-color: #007bff; /* hover 시 border color 변경 */
+}
+
+input[type="submit"] {
+    width: 320px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ddd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed; /* 기본 비활성화 상태 */
+}
+
+
+#signup {
+    color: #007bff;
+    cursor: pointer;
+}
