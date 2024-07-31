@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>로그인 페이지</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <form>
+            <img src="source/HSlogo.png" style="height: 90px; width: 250px;">
+            <br>
+            <input type="text" id="id" placeholder="아이디 또는 이메일"><br>
+            <input type="text" id="password" placeholder="암호"><br>
+            <input type="submit" id="login" value="로그인">
+            <p id="signup">계정이 없으신가요? 바로 만들기</p>
+        </form>
+        <script>
+            document.getElementById("signup").onclick = function () {
+                window.location.href = "sign_up.html";
+            };
+
+            // 로그인 버튼 색상 변경 고민중
+            
+        </script>
+    </body>
+</html>

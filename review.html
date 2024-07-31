@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HS_FOOD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: cornflowerblue;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .review {
+            background-color: white;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: flex-start;
+        }
+        .review img {
+            max-width: 150px;
+            margin-right: 1rem;
+            border-radius: 5px;
+        }
+        .review h2 {
+            margin-top: 0;
+        }
+        .review p {
+            line-height: 1.6;
+        }
+        .review .rating {
+            color: gold;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HS FOOD</h1>
+    </header>
+    <div class="container">
+        <div class = "numsOfReview"><h2>최근 리뷰 : 2개</h2></div>
+        <div class="review">
+            <img src="https://via.placeholder.com/150" alt="김치찌개 사진">
+            <div>
+                <h2>소금구이</h2>
+                <p class="rating">★★★★★</p>
+                <p>가성비 굳</p>
+            </div>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/150" alt="비빔밥 사진">
+            <div>
+                <h2>에비텐동</h2>
+                <p class="rating">★★★★☆</p>
+                <p>괜찮아요</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 음식 리뷰 페이지. All rights reserved.</p>
+    </footer>
+</body>
+</html>
