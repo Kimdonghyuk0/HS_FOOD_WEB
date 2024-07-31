@@ -10,8 +10,8 @@
         <form>
             <img src="source/HSlogo.png" style="height: 90px; width: 250px;">
             <br>
-            <input type="text" id="id" placeholder="아이디 또는 이메일"><br>
-            <input type="text" id="password" placeholder="암호"><br>
+            <input type="text" id="id" value="" placeholder="아이디 또는 이메일"><br>
+            <input type="text" id="password" value="" placeholder="암호" oninput="checkInputs()"><br>
             <input type="submit" id="login" value="로그인">
             <p id="signup">계정이 없으신가요? 바로 만들기</p>
         </form>
@@ -20,7 +20,22 @@
                 window.location.href = "sign_up.html";
             };
 
-            // 로그인 버튼 색상 변경 고민중
+            function checkInputs() {
+                let id = document.getElementById("id").value;
+                let password = document.getElementById("password").value;
+                let loginButton = document.getElementById("login");
+
+                if (id !== null && password !== null) {
+                    loginButton.style.backgroundColor = "#007bff";
+                } 
+                else {
+                    loginButton.style.backgroundColor = "ddd";
+                }
+
+            }
+
+
+            
             
         </script>
     </body>
