@@ -16,11 +16,14 @@
             color: white;
             text-align: center;
             padding: 1rem 0;
+            position: relative; /* 헤더의 위치 설정 */
+            z-index: 1; /* 헤더가 다른 요소보다 위에 있도록 설정 */
         }
         .container {
             width: 80%;
             margin: 0 auto;
             padding: 1rem;
+            padding-top: 60px; /* 헤더 높이만큼의 패딩 추가 */
         }
         .review {
             background-color: white;
@@ -54,14 +57,30 @@
             width: 100%;
             bottom: 0;
         }
+        .back-button {
+            display: block;
+            width: 200px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: red;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            position: fixed; /* 버튼을 화면에 고정 */
+            top: 130px; /* 헤더 높이와 여백을 고려하여 위치 조정 */
+            left: 20px; /* 화면 왼쪽에 위치 */
+            z-index: 10; /* 버튼이 헤더와 다른 요소들 위에 있도록 설정 */
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>HS FOOD</h1>
     </header>
+    <a href="main.html" class="back-button">메인으로 가기</a>
     <div class="container">
-        <div class = "numsOfReview"><h2>최근 리뷰 : 2개</h2></div>
+        <div class="numsOfReview"><h2>최근 리뷰 : 2개</h2></div>
         <div class="review">
             <img src="https://via.placeholder.com/150" alt="김치찌개 사진">
             <div>
