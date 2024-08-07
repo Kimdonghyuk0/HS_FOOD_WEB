@@ -24,7 +24,19 @@ input[type="text"], input[type="password"] {
     border-radius: 5px;
     transition: border-color 0.3s ease;
 }
-
+.back-button {
+    display: block;
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    
+   
+}
 input[type="text"]:hover, input[type="password"]:hover {
     border-color: #007bff; /* hover 시 border color 변경 */
 }
